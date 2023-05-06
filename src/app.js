@@ -155,7 +155,7 @@ var timestepSlider = document.getElementById("timestep-slider");
         gl.uniform3fv(shader.uniforms["eye_pos"], eye);
 
         var currentStack = timesteps[parseInt(timestepSlider.value)];
-        if (playing && frame % 12 == 0) {
+        if (playing && frame % 30 == 0) {
             timestepSlider.value = (parseInt(timestepSlider.value) + 1) % timesteps.length;
 
             currentStack = timesteps[parseInt(timestepSlider.value)];

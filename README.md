@@ -51,3 +51,43 @@ npm run deploy
 Then you can copy the content of the `dist/` directory to your webserver. You can build a development
 distribution by running `npm run build`.
 
+
+Install python library pillow to convert png to webp:
+
+```
+pip3 install -U pillow
+```
+
+Create Zip files from folders:
+
+```
+zip -r <output_file> <folder_1> <folder_2> ... <folder_n>
+zip -r temp.zip Documents
+```
+
+NGINX configuration:
+
+```
+server {
+    listen        192.168.0.141:80;
+
+    add_header 'Access-Control-Allow-Origin' 'http://192.168.0.141:9000';
+    add_header 'Access-Control-Allow-Credentials' 'true';
+    add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+    add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization';
+
+    location / {
+    autoindex on;
+    root  /tmp/ply2las/longdress/webgl-volume-animation-data;
+    }
+
+}
+```
+where 'http://192.168.0.141:9000' is the npm/webpack server URL.
+
+
+Restart NGINX:
+
+```
+sudo systemctl restart nginx
+```
