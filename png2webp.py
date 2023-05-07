@@ -3,15 +3,17 @@
 import os
 from PIL import Image
 
-input_folder = 'Png'
-output_folder = 'webp'
+mydir = "/home/kulkarnu"
+input_folder = '{}/pcs_dataset/longdress/Png'.format(mydir)
+output_folder = '{}/pcs_dataset/longdress/webp'.format(mydir)
 
 # Create the output folder if it doesn't already exist
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 
 # Loop through all files in the input folder
-for filename in os.listdir(input_folder):
+for img_file in os.listdir(input_folder):
+    filename = os.path.basename(img_file)
     # Check if the file is a PNG image
     if filename.endswith('.png'):
         # Construct the input and output file paths

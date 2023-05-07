@@ -3,8 +3,9 @@
 import os
 import shutil
 
-input_folder = '/tmp/ply2las/longdress/webp'
-output_dir = '/tmp/ply2las/longdress/webgl-volume-animation-data'
+mydir = "/home/kulkarnu"
+input_folder = '{}/pcs_dataset/longdress/webp'.format(mydir)
+output_dir = '{}/pcs_dataset/longdress/webgl-volume-animation-data'.format(mydir)
 
 # Create the output folder if it doesn't already exist
 if not os.path.exists(output_dir):
@@ -19,7 +20,7 @@ output_image_id = 1
 # Loop through all files in the input folder
 for frame_num in range(start_frame, end_frame + 1):
     filename = "longdress_vox10_{}.webp".format(frame_num)
-    input_file = "/tmp/ply2las/longdress/webp/{}".format(filename)
+    input_file = "{}/pcs_dataset/longdress/webp/{}".format(mydir, filename)
 
     # Check if the file is a webp image
     if filename.endswith('.webp'):
