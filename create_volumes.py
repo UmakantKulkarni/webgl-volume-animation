@@ -40,3 +40,14 @@ for frame_num in range(start_frame, end_frame + 1):
         shutil.copyfile(input_file, image_output_filename)
 
 
+if 0:
+    zip -r x__t001.zip x__t001
+    zip -r x__t002.zip x__t002
+    zip -r x__t003.zip x__t003
+    zip -r x__t004.zip x__t004
+    zip -r x__t005.zip x__t005
+    zip -r x__t006.zip x__t006
+    zip -r x__t007.zip x__t007
+    zip -r x__t008.zip x__t008
+    zip -r x__t009.zip x__t009
+    zip -r x__t0010.zip x__t0010
