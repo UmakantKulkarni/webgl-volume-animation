@@ -51,3 +51,17 @@ if 0:
     zip -r x__t008.zip x__t008
     zip -r x__t009.zip x__t009
     zip -r x__t0010.zip x__t0010
+
+
+    vi urllist.txt
+
+    http://192.168.0.141/x__t001.zip
+    http://192.168.0.141/x__t002.zip
+    http://192.168.0.141/x__t003.zip
+    http://192.168.0.141/x__t004.zip
+    http://192.168.0.141/x__t005.zip
+    http://192.168.0.141/x__t006.zip
+    http://192.168.0.141/x__t007.zip
+    http://192.168.0.141/x__t008.zip
+    http://192.168.0.141/x__t009.zip
+    http://192.168.0.141/x__t0010.zip
