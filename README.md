@@ -65,7 +65,7 @@ zip -r <output_file> <folder_1> <folder_2> ... <folder_n>
 zip -r temp.zip Documents
 ```
 
-NGINX configuration:
+NGINX configuration: https://docs.unity3d.com/Manual/webgl-networking.html
 
 ```
 server {
