@@ -4,23 +4,24 @@ import os
 import shutil
 
 mydir = "/home/kulkarnu"
-input_folder = '{}/pcs_dataset/longdress/webp'.format(mydir)
-output_dir = '{}/pcs_dataset/longdress/webgl-volume-animation-data'.format(mydir)
+model = "soldier"
+input_folder = '{}/pcs_dataset/{}/webp'.format(mydir, model)
+output_dir = '{}/pcs_dataset/{}/webgl-volume-animation-data'.format(mydir, model)
 
 # Create the output folder if it doesn't already exist
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-start_frame = 1051
-end_frame = 1350
+start_frame = 536
+end_frame = 835
 fps = 30
 folder_frame = start_frame + fps
 folder_count = 1
 output_image_id = 1
 # Loop through all files in the input folder
 for frame_num in range(start_frame, end_frame + 1):
-    filename = "longdress_vox10_{}.webp".format(frame_num)
-    input_file = "{}/pcs_dataset/longdress/webp/{}".format(mydir, filename)
+    filename = "{}_vox10_{}.webp".format(model, frame_num)
+    input_file = "{}/pcs_dataset/{}/webp/{}".format(mydir, model, filename)
 
     # Check if the file is a webp image
     if filename.endswith('.webp'):

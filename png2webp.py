@@ -4,8 +4,9 @@ import os
 from PIL import Image
 
 mydir = "/home/kulkarnu"
-input_folder = '{}/pcs_dataset/longdress/Png'.format(mydir)
-output_folder = '{}/pcs_dataset/longdress/webp'.format(mydir)
+model = "soldier"
+input_folder = '{}/pcs_dataset/{}/Png'.format(mydir, model)
+output_folder = '{}/pcs_dataset/{}/webp'.format(mydir, model)
 
 # Create the output folder if it doesn't already exist
 if not os.path.exists(output_folder):
