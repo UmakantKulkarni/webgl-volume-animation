@@ -20,7 +20,7 @@ folder_count = 1
 output_image_id = 1
 # Loop through all files in the input folder
 for frame_num in range(start_frame, end_frame + 1):
-    filename = "{}_vox10_{}.webp".format(model, frame_num)
+    filename = "{}_vox10_0{}.webp".format(model, frame_num)
     input_file = "{}/pcs_dataset/{}/webp/{}".format(mydir, model, filename)
 
     # Check if the file is a webp image
