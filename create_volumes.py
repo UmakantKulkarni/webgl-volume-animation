@@ -42,6 +42,8 @@ for frame_num in range(start_frame, end_frame + 1):
 
 
 if 0:
+    pass
+    '''
     zip -r x__t001.zip x__t001
     zip -r x__t002.zip x__t002
     zip -r x__t003.zip x__t003
@@ -56,13 +58,14 @@ if 0:
 
     vi urllist.txt
 
-    http://192.168.0.141/x__t001.zip
-    http://192.168.0.141/x__t002.zip
-    http://192.168.0.141/x__t003.zip
-    http://192.168.0.141/x__t004.zip
-    http://192.168.0.141/x__t005.zip
-    http://192.168.0.141/x__t006.zip
-    http://192.168.0.141/x__t007.zip
-    http://192.168.0.141/x__t008.zip
-    http://192.168.0.141/x__t009.zip
-    http://192.168.0.141/x__t0010.zip
+    http://192.168.6.23/x__t001.zip
+    http://192.168.6.23/x__t002.zip
+    http://192.168.6.23/x__t003.zip
+    http://192.168.6.23/x__t004.zip
+    http://192.168.6.23/x__t005.zip
+    http://192.168.6.23/x__t006.zip
+    http://192.168.6.23/x__t007.zip
+    http://192.168.6.23/x__t008.zip
+    http://192.168.6.23/x__t009.zip
+    http://192.168.6.23/x__t0010.zip
+    '''
